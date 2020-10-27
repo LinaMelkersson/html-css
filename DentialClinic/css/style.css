@@ -1,0 +1,45 @@
+
+/* Mobile first */
+.topnav {
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+}
+
+.logga {
+    width: 100%;
+    overflow: hidden;
+}
+
+.burgarmeny {
+    font-size: 3.5rem;
+    color:#2baaec;
+    position: absolute;
+    top: 15%;
+    right: 6%;
+    }
+.buttonA {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 15%;
+    right: 6%;
+}
+
+
+.klocka {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.footer {
+position: fixed;
+left: 0%;
+bottom: 0%;
+width: 100%;
+background-color: #2baaec;
+color: #f3fbff;
+text-align: center;
+}
