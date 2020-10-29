@@ -1,5 +1,8 @@
 
 /* Mobile first */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -318,3 +321,7 @@ bottom: 0;
 .bottenknapp:hover > a {
     color:#f7f7f7;
 }
+
+
+
+
