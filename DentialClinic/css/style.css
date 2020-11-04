@@ -27,8 +27,9 @@ p {
 }
 
 .container {
-    max-width: 80vw;
+    width: 80vw;
     margin: auto;
+    
 }
 
 .overmeny {
@@ -41,29 +42,54 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.navbarstor {
+    display: none;
+}
+
+#reklamstycke-bild {
+    display: none;
+}
+
+#infostycke-bild {
+    display: none;
+}
+
+.storskarm {
+    display: none;
+}
+
+.mobilskarm {
+    display: block;
+}
 
 /* Topmenyn */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+
 .huvudmeny {
     display: flex;
     justify-content: space-between;
     
 }
 
-.logga {
-    padding: 1rem;
+.logga > img {
+    height: 4rem;
 }
 
 .burgarmeny {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color:#2baaec;
     width: 100%;
-    padding: 1.6rem;
 }
 
-
-.navbarstor {
-    display: none;
-}
 
 /* Burgarmenysidan */
 .klockaochtider {
@@ -78,7 +104,7 @@ p {
     margin-right: 0.5rem;
 }
 
-.öppetider {
+.oppetider {
     text-align: right;
     font-size: 11pt;
     font-style: 'Roboto';
@@ -137,7 +163,8 @@ p {
     text-align: center;
     justify-content: center;
     font-style:'Roboto Slab';
-    height: 6vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -147,7 +174,6 @@ p {
 .box1 {
     background-color:#DEDEDE;
     padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .reklamstycke {
@@ -159,29 +185,30 @@ p {
     margin-bottom: 3rem;
 }
 
-.gråknapp {
+.graknapp {
     background-color:#25e6c8;
     border: none;
     padding: 20px 40px;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
-.gråknapp > a {
+.graknapp > a {
     text-decoration: none;
     color:#f3fbff;
     font-size: 11pt;
     font-weight: bold;
 }
 
-.gråknapp:hover {
+.graknapp:hover {
     background-color:#2baaec;
 }
 
 /* infobox hemskärm */
 .box2 {
-    height: 150vw;
+    padding-top: 2rem;
 }
 
 .infostycke {
@@ -189,18 +216,20 @@ p {
     display: flex;
     flex-direction: column;
     justify-content:center;
+    padding-bottom: 2rem;
 }
 
-.infostycke > h2 {
+.infostycke  h2 {
     text-align: center;
+    padding-top: 2rem;
 }
 
-.infostycke > p {
+.infostycke  p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.infostycke > hr {
+.infostycke  hr {
     background-color:#25e6c8;
     height: 2px;
     border: none;
@@ -227,7 +256,6 @@ p {
 /* our services */
 
 .box3 {
-    height: 550vw;
     background-color:#F7F7F7;
 }
 
@@ -272,6 +300,7 @@ p {
     text-decoration: none;
     text-align: center;
     color:#626262;
+    margin: 0;
 }
 
 .servicebox > a > h3 {
@@ -296,7 +325,6 @@ p {
 
 /* Bokning idag över footer */
 .box4 {
-    height: 40vw;
     background-color:#4EB4E8;
 }
 
@@ -306,7 +334,6 @@ p {
     text-align: center;
     color: #f7f7f7;
     flex-direction: column;
-    padding-top: 1rem;
 }
 
 .bottenknapp {
@@ -317,6 +344,7 @@ p {
     text-align: center;
     display: inline-block;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bottenknapp > a {
@@ -339,8 +367,18 @@ p {
         display: none;
     }
 
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        align-items: center;
+        width: 100%;
+    }
+
     .logga {
         display: flex;
+        padding: 0;
     }
 
     .overmeny {
@@ -388,12 +426,122 @@ p {
 
     #reklamstycke-bild {
         flex: 1;
+        display: block;
+    }
+
+    #reklamstycke-bild > img {
+        margin-bottom: -0.28rem;
     }
 
     #reklamstycke-text {
-   
+        padding-top: 5rem;
+        padding-left: 5rem;
         flex: 1;
     }
+
+    .infostycke {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    #infostycke-text {
+        flex: 1;
+        text-align: left;
+        padding-top: 5rem;
+    }
+
+    #infostycke-text hr {
+        background-color:#25e6c8;
+        height: 2px;
+        border: none;
+        margin-top: 1rem;
+    }
+
+    .bokning {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        color: #f7f7f7;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .bottenknapp {
+        background-color: #f7f7f7;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: inline-block;  
+    }
+
+    .storskarm {
+        display: block;
+    }
+
+    .mobilskarm {
+        display: none;
+    }
+
+    .rutor {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rutor hr {
+        width: 30vw;
+        background-color:#25e6c8;
+        height: 2px;
+        border: none;
+        margin-top: 1rem;
+    }
+
+    .rutor h2 {
+        padding-top: 5rem;
+    }
+
+    .servicebox {
+        background-color:#ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 20vw;
+        width: 20vw;
+        border-radius: 10px;
+    }
+
+    .cirkel {
+        width: 8vw;
+        height: 8vw;
+        background-color: #25e6c8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img2 {
+        height: 5vw;
+    }
+
+    .kort {
+        display: grid;
+        column-gap: 2rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+
+    }
+    
+    
 
     
    
