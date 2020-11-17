@@ -1,0 +1,523 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+button:focus{
+    outline: 0 !important;
+}
+
+
+
+.whitespace {
+    height: 10rem;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    justify-content: center;
+    
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color:#E3E3E3;
+}
+
+.container3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+/* Mobile first */
+.header {
+    background-image: url(/img/blue_background_crop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 190vw;
+    background-position: center;
+    
+}
+
+.headercontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+    display: grid;
+    justify-items: center;
+    column-gap: 7rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.3rem;
+}
+
+.logga {
+    display: flex;
+    height: 3rem;
+}
+
+.mobilmeny i {
+    font-size: 2rem;
+    color: #FFBB00;
+}
+
+.headertext {
+    padding-top: 1rem;
+    color: #ffffff;
+}
+
+.htext {
+    font-style: 'poppins';
+}
+
+.htext h1 {
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+
+.headerbutton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    margin-bottom: 3rem;
+}
+
+.downloadbutton {
+    background-color: #ffffff44;
+    border: 1px solid #3097fe6e;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.downloadbutton:hover {
+    background-color: #3096FE;
+    border: 1px solid #FFFFFF;
+}
+
+.watch {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.watch p {
+    padding-left: 0.3rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.watch:hover {
+    background-color: #3096FE;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.playimg {
+    height: 3rem;
+}
+
+.downloadbutton p {
+    margin: 0;
+}
+
+.mobiljump {
+    width: 60%;
+    height: 18rem;
+    position: relative;
+    margin: auto;
+}
+
+#mobil1 {
+    height: 15rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#mobil2 {
+    height: 15rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.box1 {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+
+.eclogga-hide {
+    display: none;
+}
+
+.ecimg {
+    height: 1rem;
+}
+
+
+.box2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.augrid {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.bakgrundphone {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem; 
+}
+
+.cirkel {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    overflow: hidden;
+}
+
+.bakgrundcirkel {
+    height: 10rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation: spinningcirkle 11s infinite linear;
+}
+
+@keyframes spinningcirkle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.phonebild {
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+.aboutusinfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF5D9;
+    border-radius: 5px;
+    border-color: none;
+    color: #FFBB00;
+    width: 5rem;
+}
+
+.lankknappar {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.gknapp {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.gknapp:hover {
+    background-color: #FFBB00;
+}
+
+.specialp {
+    font-size: 7pt;
+    margin: 0;
+}
+
+.specialh3 {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.googleplayimg {
+    height: 1.5rem;
+    padding-right: 0.4rem;
+    padding-left: 0.2rem;
+    
+}
+
+.knapptext {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    text-align: left;
+    padding: 0.3rem;
+}
+
+.extraluft {
+    padding-right: 0.3rem;
+}
+
+.box3 {
+    width: 75vw;
+    padding-top: 1rem;
+}
+
+.gridadesok {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5rem;
+}
+
+.ES-bild {
+    display: flex;
+    height: 2rem;
+}
+
+.ES-text {
+    display: grid;
+    padding-left: 0.5rem;   
+}
+
+.appscreen {
+    padding-top: 1rem;  
+}
+
+.textscreen {
+    padding-bottom: 1rem;
+}
+
+.phonekarusell {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.phone1 {
+    height: 5rem;
+}
+
+.phone2 {
+    height: 5rem;
+}
+
+.phone3 {
+    height: 6rem;
+}
+
+.appscreen hr {
+    background-color: #FFBB00;
+    height: 2px;
+    border: none;
+}
+
+.appstats {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.gridadesiffror {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.siffror {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+      
+}
+
+.siffrorna {
+    color: #3096FE;
+    font-size: 15pt;
+    margin: 0;
+}
+
+.pstext {
+    font-size: 8pt;
+    margin: 0;
+}
+
+.download {
+    background-image: url(/img/mittbluebackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vw;
+    overflow: hidden;
+}
+
+.lurarochtext {
+    display: grid;
+}
+
+.textL {
+    color:#FFFFFF;
+    display: grid;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.trelurar {
+    position: relative;
+    width: 43vw;
+    height: 10rem;
+    margin: auto;
+    
+}
+
+#lur1 {
+    height: 10rem;
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+}
+
+#lur2 {
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: -4rem;  
+}
+
+#lur3 {
+    height: 11rem;
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.Kontakt {
+    display: grid;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color:#eeeeee;
+  }
+  
+  input[type=submit] {
+    background-color:#3096FE;
+    color: white;
+    padding: 12px 70px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ffbb00;
+  }
+
+.footer {
+    background-image: url(/img/footerbakgrund.svg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100;
+    margin-bottom: 0;
+}
+
+.footerlogga {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.loggaf {
+    height: 2rem ;
+}
+
+.footernav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.63rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 9pt;
+    padding-top: 0.8rem;
+}
+
+.footernav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footernav a:hover {
+    color: #ffbb00 ;
+}
+
+.socialamedier {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.lada {
+    background-color: #ffffff38;
+    height: 1.7rem ;
+    width: 1.7rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    color: #ffffff;
+    font-size: 12pt;
+}
+
+/* storskärm */
+@media (min-width: 700px ) {
+    .eclogga-hide {
+        display: block;
+        display: flex;
+        height: 0.8rem;
+    }
+
+    .ECkarusell {
+        display: grid;
+        column-gap: 0rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
