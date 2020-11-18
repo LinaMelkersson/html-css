@@ -25,9 +25,10 @@ button:focus{
 
 .container2 {
     display: flex;
+    margin: auto;
     width: 100%;
     justify-content: center;
-    background-color:#E3E3E3;
+    background-color:#e3e3e3;
 }
 
 .container3 {
@@ -71,6 +72,14 @@ button:focus{
 .mobilmeny i {
     font-size: 2rem;
     color: #FFBB00;
+}
+
+.navbar {
+    display: none;
+}
+
+.gettheapp {
+    display: none;
 }
 
 .headertext {
@@ -143,10 +152,7 @@ button:focus{
     margin: auto;
 }
 
-@keyframes flygandelurar {
-    
 
-}
 
 #mobil1 {
     height: 15rem;
@@ -177,7 +183,7 @@ button:focus{
 }
 
 .eclogga {
-    height: 20vw;
+    height: 5vw;
     width: 100%;
     position: absolute;
     display: flex;
@@ -204,7 +210,7 @@ button:focus{
 }
 
 .eclogga1 {
-    height: 20vw;
+    height: 5vw;
     width: 100%;
     position: absolute;
     display: flex;
@@ -221,7 +227,7 @@ button:focus{
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: 4.7s;
+    animation-delay: 5s;
 }
 
 @keyframes ECkarusell1 {
@@ -240,12 +246,6 @@ button:focus{
 .box2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-.augrid {
-    display: grid;
-    gap: 2rem;
-    justify-items: center;
 }
 
 .bakgrundphone {
@@ -351,6 +351,7 @@ button:focus{
     padding-top: 1rem;
 }
 
+
 .gridadesok {
     display: grid;
     grid-template-columns: 1fr;
@@ -388,6 +389,11 @@ justify-content: space-between;
     column-gap: 1rem;
 }
 
+.telefoner {
+    display: flex;
+    margin: auto;
+}
+
 .phone1 {
     height: 5rem;
 }
@@ -413,13 +419,15 @@ justify-content: space-between;
 
 .gridadesiffror {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1rem;
+
 }
 
 .siffror {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin: 0;
       
 }
 
@@ -432,6 +440,7 @@ justify-content: space-between;
 .pstext {
     font-size: 8pt;
     margin: 0;
+
 }
 
 .download {
@@ -457,9 +466,9 @@ justify-content: space-between;
     position: relative;
     width: 43vw;
     height: 10rem;
-    margin: auto;
-    
+    margin: auto;  
 }
+
 
 #lur1 {
     height: 10rem;
@@ -576,19 +585,315 @@ input[type=text], select, textarea {
     font-size: 12pt;
 }
 
+.lada:hover {
+    border: 1px solid #FFFFFF;
+}
+
+
+/* Ipad */
+@media (min-width: 760px) {
+
+    .header {
+        background-image: url(/img/blue_background_crop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vw;
+        background-position: center;
+        
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .mobilmeny {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+ 
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .navbar a:hover {
+        color: #FFBB00;
+        text-decoration: underline;
+    }
+
+    
+
+    .headertext{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mobiljump {
+        width: 53%;
+    }
+
+    .eclogga-hide {
+        display: block;
+    }
+
+    .box1 {
+        height: 10vw;
+    }
+
+    .eclogga {
+        padding: 5vw;
+    }
+
+    .eclogga1 {
+        padding: 5vw;
+
+    }
+
+    .ecimg1:first-child, .ecimg1:last-child {
+        display: flex;
+    }
+
+    .ecimg:first-child, .ecimg1:last-child {
+        display: flex;
+    }
+
+    .ecimg {
+        height: 1rem;
+        position: relative;
+        animation-name: ECkarusell;
+        animation-duration: 20s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 0;
+    }
+
+    .ecimg1 {
+        height: 1rem;
+        position: relative;
+        animation-name: ECkarusell1;
+        animation-duration: 20s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 10s;
+    }
+
+    .bakgrundcirkel {
+        height: 18rem;
+    }
+
+    .phonebild {
+        height: 20rem;
+    }
+
+    .cirkel {
+        height: 20rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    .box2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phonekarusell {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+    
+    .phone1 {
+        height: 11rem;
+    }
+    
+    .phone2 {
+        height: 13rem;
+    }
+    
+    .phone3 {
+        height: 15rem;
+    }
+
+    .gridadesiffror {
+        text-align: center;
+    }
+
+    .download {
+        background-image: url(/img/mittbluebackground.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 44vw;
+        overflow: hidden;
+    }
+
+    .lurarochtext {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trelurar {
+        position: relative;
+        width: 35vw;
+        height: 18rem;
+        margin: auto;  
+    }
+    
+    
+    #lur1 {
+        height: 15rem;
+        position: absolute;
+        left: 0;
+        bottom: -6rem;
+    }
+    
+    #lur2 {
+        height: 15rem;
+        position: absolute;
+        right: 0;
+        bottom: -6rem;  
+    }
+    
+    #lur3 {
+        height: 17rem;
+        position: absolute;
+        bottom: -6rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .footer {
+        height: 46vw;
+
+    }
+
+    
+    
+
+
+
+
+}
+
 
 
 /* storskärm */
-@media (min-width: 700px ) {
-    .eclogga-hide {
+@media (min-width: 1000px ) {
+    .gettheapp {
         display: block;
-        display: flex;
-        height: 0.8rem;
+        background-color: #FFBB00;
+        border: none;
+        border-radius: 10px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
-    .ECkarusell {
+    .gettheapp p {
+        margin: auto;
+        color: #FFFFFF;
+    }
+
+    .gettheapp:hover {
+        border: 1px solid #FFFFFF;
+    }
+
+    .headercontent {
+        margin: auto;
+    }
+
+    .headertext {
+        margin-top: 10vw;
+    }
+
+    .mobiljump {
+        width: 70%;
+        height: 39rem;
+        position: relative;
+        margin: auto;
+    }
+    
+    
+    
+    #mobil1 {
+        height: 33rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #mobil2 {
+        height: 33rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .ecimg1 {
+        animation-delay: 11s;
+    }
+
+    .bakgrundcirkel {
+        height: 24rem;
+    }
+
+    .phonebild {
+        height: 23rem;
+    }
+
+    .cirkel {
+        height: 25rem;
+        width: 25rem;
+        margin: auto;
+    }
+
+    /* .rutorvanster {
+        display: block;
+    } */
+
+    .container2 {
+        background-image: url(/img/rutorvanster.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 37vw;
+    }
+
+
+    .gridadefeatures {
         display: grid;
-        column-gap: 0rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .featurestext {
+        width: 45vw;
+    }
+
+    .gridadesok {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .ES-text h3 {
+        font-size: 13pt;
+    }
+
+    .ES-text p {
+        font-size: 10pt;
     }
 }
