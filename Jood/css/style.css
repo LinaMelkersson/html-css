@@ -143,6 +143,11 @@ button:focus{
     margin: auto;
 }
 
+@keyframes flygandelurar {
+    
+
+}
+
 #mobil1 {
     height: 15rem;
     position: absolute;
@@ -158,20 +163,78 @@ button:focus{
 }
 
 .box1 {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 2rem;
+    position: relative;
+    width: 100%;
+    height: 20vw;
+}
+
+.ecimg1:first-child, .ecimg1:last-child {
+    display: none;
+}
+
+.ecimg:first-child, .ecimg1:last-child {
+    display: none;
+}
+
+.eclogga {
+    height: 20vw;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+    overflow: hidden;
+}
+
+.ecimg {
+    height: 1rem;
+    position: relative;
+    animation-name: ECkarusell;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@keyframes ECkarusell {
+    0% { left: -100vw;}
+    100% { left: 100vw;}
+
+}
+
+.eclogga1 {
+    height: 20vw;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+    overflow: hidden;
+}
+
+.ecimg1 {
+    height: 1rem;
+    position: relative;
+    animation-name: ECkarusell1;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4.7s;
+}
+
+@keyframes ECkarusell1 {
+    0% { left: -100vw;}
+    100% { left: 100vw;}
+
 }
 
 .eclogga-hide {
     display: none;
 }
 
-.ecimg {
-    height: 1rem;
-}
+
 
 
 .box2 {
@@ -311,6 +374,12 @@ button:focus{
 
 .textscreen {
     padding-bottom: 1rem;
+}
+
+.mobilkarusell {
+display: flex;
+justify-content: space-between;
+ 
 }
 
 .phonekarusell {
@@ -506,6 +575,8 @@ input[type=text], select, textarea {
     color: #ffffff;
     font-size: 12pt;
 }
+
+
 
 /* storskärm */
 @media (min-width: 700px ) {
