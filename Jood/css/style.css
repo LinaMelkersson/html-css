@@ -401,6 +401,12 @@ justify-content: space-between;
     display: flex;
     margin: auto;
 }
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+}
 
 .phone1 {
     height: 5rem;
@@ -945,15 +951,15 @@ input[type=text], select, textarea {
     }
 
     .phone1 {
-        height: 25vw;
+        height: 23vw;
     }
 
     .phone2 {
-        height: 27vw;
+        height: 25vw;
     }
     
     .phone3 {
-        height: 29vw;
+        height: 27vw;
     }
 
     .appstats {
