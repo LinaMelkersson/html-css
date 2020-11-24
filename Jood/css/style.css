@@ -38,6 +38,14 @@ button:focus{
     overflow: hidden;
 }
 
+#easylur {
+    display: none;
+}
+
+.storskarmkontakt {
+    display: none;
+}
+
 
 
 /* Mobile first */
@@ -778,7 +786,7 @@ input[type=text], select, textarea {
     }
 
     .footer {
-        height: 46vw;
+        height: 25vw;
 
     }
 
@@ -794,6 +802,10 @@ input[type=text], select, textarea {
 
 /* storskärm */
 @media (min-width: 1000px ) {
+
+.mobilpaddakontakt {
+    display: none;
+}
     .gettheapp {
         display: block;
         background-color: #FFBB00;
@@ -844,8 +856,21 @@ input[type=text], select, textarea {
         bottom: 0;
     }
 
+    .eclogga {
+        padding: 6vw;
+    }
+
+    .eclogga1 {
+        padding: 6vw;
+    }
+
+    .ecimg {
+        height: 2rem;
+    }
+
     .ecimg1 {
-        animation-delay: 11s;
+        height: 2rem;
+        animation-delay: 10s;
     }
 
     .bakgrundcirkel {
@@ -862,25 +887,29 @@ input[type=text], select, textarea {
         margin: auto;
     }
 
-    /* .rutorvanster {
-        display: block;
-    } */
+    .lankknappar {
+        padding-top: 2rem;
+    }
 
     .container2 {
         background-image: url(/img/rutorvanster.svg);
         background-position: left;
         background-repeat: no-repeat;
         height: 37vw;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
+
 
 
     .gridadefeatures {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
     }
 
     .featurestext {
-        width: 45vw;
+        width: 50vw;
     }
 
     .gridadesok {
@@ -895,5 +924,88 @@ input[type=text], select, textarea {
 
     .ES-text p {
         font-size: 10pt;
+    }
+
+    #easylur {
+        display: block;
+        height: 30vw;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .appscreen {
+        padding: 0;
+    }
+
+    .textscreen {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .phone1 {
+        height: 25vw;
+    }
+
+    .phone2 {
+        height: 27vw;
+    }
+    
+    .phone3 {
+        height: 29vw;
+    }
+
+    .appstats {
+        background-image: url(/img/karta.svg);
+        background-position: top center;
+        background-size: contain; 
+    }
+
+    .download {
+        height: 22rem;
+    }
+
+
+    .trelurar {
+        position: relative;
+        width: 20rem;
+        height: 18rem;
+        margin: auto;  
+    }
+    
+    
+    #lur1 {
+        height: 20rem;
+        position: absolute;
+        left: 0;
+        bottom: -9rem;
+    }
+    
+    #lur2 {
+        height: 20rem;
+        position: absolute;
+        right: 0;
+        bottom: -9rem;  
+    }
+    
+    #lur3 {
+        height: 22rem;
+        position: absolute;
+        bottom: -9rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .storskarmkontakt {
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .footer {
+        height: 10vw;
     }
 }
