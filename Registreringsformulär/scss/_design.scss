@@ -1,0 +1,80 @@
+.centreradknapp {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.colorbutton {
+    background-color: rgb(248, 152, 168);
+    border: none;
+}
+
+
+form hr {
+    border: 2px solid rgb(248, 152, 168);
+    border-radius: 2px;
+}
+
+.linktext {
+    color: rgb(233, 108, 129);
+    text-decoration: underline;
+}
+
+.tacktack {
+    border: 2px solid rgb(248, 152, 168);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    margin-top: 8rem;
+}
+
+.tackruta {
+    text-align: center;
+    padding: 2rem;
+}
+
+.tillbaka {
+    background-color:rgb(248, 152, 168);
+    border-radius: 8px;
+    text-align: center;
+    width: 40vw;
+    height: 7vw;
+}
+
+.tillbaka a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.home {
+    text-align: center;
+}
+
+.centrerade {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 19fr 1fr;
+    justify-items: center;
+    margin: auto;  
+}
+
+.gdpr {
+    text-align: center;
+}
+
+.welcome {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.welcome h2 {
+    color: rgb(246, 120, 141);
+}
+
+.space {
+    padding-bottom: 1rem;
+}
+
+
